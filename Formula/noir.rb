@@ -1,17 +1,17 @@
 class Noir < Formula
     desc "CLI interface to Renoir templating engine"
     homepage "github.com/gi0baro/noir"
-    version "0.1.1"
+    version "0.2.0"
     license "BSD-3-Clause"
     bottle :unneeded
 
     if OS.mac?
-        url "https://github.com/gi0baro/noir/releases/download/0.1.1/noir-0.1.1-darwin-x86_64.tar.gz"
-        sha256 "6d7e189c8b634f633fdbd953fd65126dc74e11845c10327bd9f640c7681ca5d0"
+        url "https://github.com/gi0baro/noir/releases/download/0.2.0/noir-0.2.0-darwin-x86_64.tar.gz"
+        sha256 "5bd225f1391593c20df671f9b79baf6ea1365694458cb40fc1c87639723cbb9f"
     end
     if OS.linux? && Hardware::CPU.intel?
-        url "https://github.com/gi0baro/noir/releases/download/0.1.1/noir-0.1.1-linux-x86_64.tar.gz"
-        sha256 "99019b50c1cbb7eb9527d650a98526351f34e1312c7899c7dbbadd23a7b07a0f"
+        url "https://github.com/gi0baro/noir/releases/download/0.2.0/noir-0.2.0-linux-x86_64.tar.gz"
+        sha256 "7462c732ccb555e5ffbded1407fb7434aa7c49a023d6683ef6836e3742557131"
     end
 
     def install
