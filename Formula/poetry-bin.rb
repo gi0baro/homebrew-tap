@@ -7,12 +7,12 @@ class PoetryBin < Formula
     bottle :unneeded
 
     if OS.mac?
-        url "https://github.com/gi0baro/poetry-bin/releases/download/1.1.11-1/poetry-bin-1.1.11-1-x86_64-apple-darwin.tar.gz"
-        sha256 "e480e46233bd71b7cd72ef113b8bdd684463c3534b66b0990611195b7df6b16c"
+        url "https://github.com/gi0baro/poetry-bin/releases/download/1.1.11-2/poetry-bin-1.1.11-2-x86_64-apple-darwin.tar.gz"
+        sha256 "472489c203ebab7aed5ee6f3185664617a02c08466697ca7374f079a2cab8017"
     end
     if OS.linux? && Hardware::CPU.intel?
-        url "https://github.com/gi0baro/poetry-bin/releases/download/1.1.11-1/poetry-bin-1.1.11-1-x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "101e0826472cf18e0bd675d6a7b0209c84c011d49af2204cbfd98bbceeded7b9"
+        url "https://github.com/gi0baro/poetry-bin/releases/download/1.1.11-2/poetry-bin-1.1.11-2-x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "17b310abbdae01dccea7ab8f81727a810d3e97c277257b833bc05b7bcc495bb5"
     end
 
     def install
