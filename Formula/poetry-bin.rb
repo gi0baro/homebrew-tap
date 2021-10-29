@@ -2,9 +2,8 @@ class PoetryBin < Formula
     desc "Python package management tool (binary build)"
     homepage "github.com/gi0baro/poetry-bin"
     version "1.1.11"
-    revision 1
+    revision 2
     license "MIT"
-    bottle :unneeded
 
     if OS.mac?
         url "https://github.com/gi0baro/poetry-bin/releases/download/1.1.11-2/poetry-bin-1.1.11-2-x86_64-apple-darwin.tar.gz"
