@@ -1,21 +1,25 @@
 class PoetryBin < Formula
     desc "Python package management tool (binary build)"
     homepage "github.com/gi0baro/poetry-bin"
-    version "1.4.2"
+    version "1.5.1"
     revision 1
     license "MIT"
 
     if OS.mac? && Hardware::CPU.intel?
-        url "https://github.com/gi0baro/poetry-bin/releases/download/1.4.2-1/poetry-bin-1.4.2-1-x86_64-apple-darwin.tar.gz"
-        sha256 "d720d4643fe3d713126e526b61046570418fe1a354172896efaeef2fc37b5b26"
+        url "https://github.com/gi0baro/poetry-bin/releases/download/1.5.1-1/poetry-bin-1.5.1-1-x86_64-apple-darwin.tar.gz"
+        sha256 "f9a5fdf1bd0526995047f8f7ab3fd821b7ffbb8c6bdc88c224ed9f3252f76f51"
     end
     if OS.mac? && Hardware::CPU.arm?
-        url "https://github.com/gi0baro/poetry-bin/releases/download/1.4.2-1/poetry-bin-1.4.2-1-aarch64-apple-darwin.tar.gz"
-        sha256 "0f10f02e2170b025f729c0592451c197323fb1da70626c880afa99d908093b0d"
+        url "https://github.com/gi0baro/poetry-bin/releases/download/1.5.1-1/poetry-bin-1.5.1-1-aarch64-apple-darwin.tar.gz"
+        sha256 "5906a65f4149f5328fa0e35c61e7aff7c8f94cf3bc4ce693f13555d495f2f0d3"
     end
     if OS.linux? && Hardware::CPU.intel?
-        url "https://github.com/gi0baro/poetry-bin/releases/download/1.4.2-1/poetry-bin-1.4.2-1-x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "60a54a58f70b2e3e7d8ec4e18a0a0c3ad62ed5769d89f248169964316fa378b0"
+        url "https://github.com/gi0baro/poetry-bin/releases/download/1.5.1-1/poetry-bin-1.5.1-1-x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "4a1b5580bd685bd596cf87281c34b6037eabe8f8bc37bc7a4445f384c0d4397f"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+        url "https://github.com/gi0baro/poetry-bin/releases/download/1.5.1-1/poetry-bin-1.5.1-1-aarch64-unknown-linux-gnu.tar.gz"
+        sha256 "56e318bab0b2989d64ecd16f29f719e270fc5edc0aad23e92cb5e8083188b62a"
     end
 
     def install
