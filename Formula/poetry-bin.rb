@@ -1,25 +1,25 @@
 class PoetryBin < Formula
     desc "Python package management tool (binary build)"
     homepage "github.com/gi0baro/poetry-bin"
-    version "1.5.1"
+    version "1.6.0"
     revision 1
     license "MIT"
 
     if OS.mac? && Hardware::CPU.intel?
-        url "https://github.com/gi0baro/poetry-bin/releases/download/1.5.1-1/poetry-bin-1.5.1-1-x86_64-apple-darwin.tar.gz"
-        sha256 "f9a5fdf1bd0526995047f8f7ab3fd821b7ffbb8c6bdc88c224ed9f3252f76f51"
+        url "https://github.com/gi0baro/poetry-bin/releases/download/1.6.0-1/poetry-bin-1.6.0-1-x86_64-apple-darwin.tar.gz"
+        sha256 "e11435fbebc0b3e3408fb67491167ce8512c7a7a009e58140ecdc5f72f56b2cb"
     end
     if OS.mac? && Hardware::CPU.arm?
-        url "https://github.com/gi0baro/poetry-bin/releases/download/1.5.1-1/poetry-bin-1.5.1-1-aarch64-apple-darwin.tar.gz"
-        sha256 "5906a65f4149f5328fa0e35c61e7aff7c8f94cf3bc4ce693f13555d495f2f0d3"
+        url "https://github.com/gi0baro/poetry-bin/releases/download/1.6.0-1/poetry-bin-1.6.0-1-aarch64-apple-darwin.tar.gz"
+        sha256 "3a4732c7c2872184e8e88e97ea7ac50a8f7679e7bcf6c9a7a0176717940c08a5"
     end
     if OS.linux? && Hardware::CPU.intel?
-        url "https://github.com/gi0baro/poetry-bin/releases/download/1.5.1-1/poetry-bin-1.5.1-1-x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "4a1b5580bd685bd596cf87281c34b6037eabe8f8bc37bc7a4445f384c0d4397f"
+        url "https://github.com/gi0baro/poetry-bin/releases/download/1.6.0-1/poetry-bin-1.6.0-1-x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "1c7a7de4ff305263fbc5471916eba8479d463236a0fe36b963e9de7c8d44e20b"
     end
     if OS.linux? && Hardware::CPU.arm?
-        url "https://github.com/gi0baro/poetry-bin/releases/download/1.5.1-1/poetry-bin-1.5.1-1-aarch64-unknown-linux-gnu.tar.gz"
-        sha256 "56e318bab0b2989d64ecd16f29f719e270fc5edc0aad23e92cb5e8083188b62a"
+        url "https://github.com/gi0baro/poetry-bin/releases/download/1.6.0-1/poetry-bin-1.6.0-1-aarch64-unknown-linux-gnu.tar.gz"
+        sha256 "3ef20a32f8ee0629f7de083cf6ee4ffe62134667119d08f3d53b27e01e7989b4"
     end
 
     def install
