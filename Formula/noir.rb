@@ -1,20 +1,24 @@
 class Noir < Formula
     desc "CLI to Renoir templating engine"
     homepage "github.com/gi0baro/noir"
-    version "0.5.0"
+    version "0.6.0"
     license "BSD-3-Clause"
 
     if OS.mac? && Hardware::CPU.intel?
-        url "https://github.com/gi0baro/noir/releases/download/0.5.0/noir-0.5.0-darwin-x86_64.tar.gz"
-        sha256 "c57d3f16d42aa751fef35f6b550402ed999350a6da5f1292411f4aeb1b6427b8"
+        url "https://github.com/gi0baro/noir/releases/download/0.6.0/noir-0.6.0-darwin-x86_64.tar.gz"
+        sha256 "a4140062457adebdc67eccf45b0e5dac912ba79a90d299355f029e4b0b6313e9"
     end
     if OS.mac? && Hardware::CPU.arm?
-        url "https://github.com/gi0baro/noir/releases/download/0.5.0/noir-0.5.0-darwin-aarch64.tar.gz"
-        sha256 "0f92ae48b06d8b66c095c4d40f4daddcb44907c33ac77ad5be8ac2b727181cef"
+        url "https://github.com/gi0baro/noir/releases/download/0.6.0/noir-0.6.0-darwin-aarch64.tar.gz"
+        sha256 "1ef8da7d9b654b1b94e06f0cabfa3f5957d144aa2c4670726e4f089d2505ba3f"
     end
     if OS.linux? && Hardware::CPU.intel?
-        url "https://github.com/gi0baro/noir/releases/download/0.5.0/noir-0.5.0-linux-x86_64.tar.gz"
-        sha256 "d45a8bcd1eb922440d3558c797e39675f9f07ab739c1c41f0e42fa5e6a5dfda3"
+        url "https://github.com/gi0baro/noir/releases/download/0.6.0/noir-0.6.0-linux-x86_64.tar.gz"
+        sha256 "bc273ba6cff4e138784be06a783ebf4b23715b41c607ac4c446dd1d5a515785f"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+        url "https://github.com/gi0baro/noir/releases/download/0.6.0/noir-0.6.0-linux-aarch64.tar.gz"
+        sha256 "9eb32b71a6c65bd856c34d7d153d1771213da1cf4e4b219279595c273c2d8cb8"
     end
 
     def install
