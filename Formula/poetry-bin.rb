@@ -1,25 +1,25 @@
 class PoetryBin < Formula
     desc "Python package management tool (binary build)"
     homepage "github.com/gi0baro/poetry-bin"
-    version "1.8.1"
+    version "1.8.3"
     revision 1
     license "MIT"
 
     if OS.mac? && Hardware::CPU.intel?
-        url "https://github.com/gi0baro/poetry-bin/releases/download/1.8.1-1/poetry-bin-1.8.1-1-x86_64-apple-darwin.tar.gz"
-        sha256 "99833c2dfe683040f9d09c28ac0ca047b5b86312051917d27ea2b6fddb095e93"
+        url "https://github.com/gi0baro/poetry-bin/releases/download/1.8.3-1/poetry-bin-1.8.3-1-x86_64-apple-darwin.tar.gz"
+        sha256 "d623abbfa0f114ed467cb68e3f14c0d25ca15901f63e45b63aad80c9d2b24437"
     end
     if OS.mac? && Hardware::CPU.arm?
-        url "https://github.com/gi0baro/poetry-bin/releases/download/1.8.1-1/poetry-bin-1.8.1-1-aarch64-apple-darwin.tar.gz"
-        sha256 "6d35e977ab4c5c75027e9d8eb20cb8901c2a06a2bb1623b5a51a228f0d02f42f"
+        url "https://github.com/gi0baro/poetry-bin/releases/download/1.8.3-1/poetry-bin-1.8.3-1-aarch64-apple-darwin.tar.gz"
+        sha256 "786f879ae28ad3080b17a7ce3061a3aba4a2f79eca891400bfb93eb144dbbdb5"
     end
     if OS.linux? && Hardware::CPU.intel?
-        url "https://github.com/gi0baro/poetry-bin/releases/download/1.8.1-1/poetry-bin-1.8.1-1-x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "55fff93bc66a1ed87fce19c13178173bd08c0eea4f7b9ba452c0b17e141d6b5b"
+        url "https://github.com/gi0baro/poetry-bin/releases/download/1.8.3-1/poetry-bin-1.8.3-1-x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "b54fc93d7488319cd8d087b9b2ffcd4b46ef8eda838757b2038ea52c13beb0ee"
     end
     if OS.linux? && Hardware::CPU.arm?
-        url "https://github.com/gi0baro/poetry-bin/releases/download/1.8.1-1/poetry-bin-1.8.1-1-aarch64-unknown-linux-gnu.tar.gz"
-        sha256 "61650f272f7aa29763ee567f23e5ba89be8894797010a86ce1793529a25a974f"
+        url "https://github.com/gi0baro/poetry-bin/releases/download/1.8.3-1/poetry-bin-1.8.3-1-aarch64-unknown-linux-gnu.tar.gz"
+        sha256 "b7bf7e94af79f4f9f3f890ab484ed31968477d500bacb92a5a8229681ba768de"
     end
 
     def install
