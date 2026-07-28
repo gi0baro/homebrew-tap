@@ -208,6 +208,6 @@ class Pidrei < Formula
   test do
     assert_equal "0.82.0.0", shell_output("#{bin}/pidrei --version").strip
     # `--version` prints the bare version, no program name — on both binaries.
-    assert_equal "{version}", shell_output("#{{bin}}/pi3 --version").strip
+    assert_equal "{version}", shell_output("#{bin}/pi3 --version").strip
   end
 end
