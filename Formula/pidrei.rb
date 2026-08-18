@@ -6,8 +6,8 @@ class Pidrei < Formula
 
   desc "Terminal coding agent — a Python port of the pi coding agent"
   homepage "https://github.com/gi0baro/pidrei"
-  url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.0/pidrei-0.84.2.0.tar.gz"
-  sha256 "c4586cccf81be2c0058c8972a47f88b3c58563bad5ae12ad84334c43988a0a74"
+  url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.1/pidrei-0.84.2.1.tar.gz"
+  sha256 "e281cd84fbce2788aae2af2fe452365a510fa1a8c9a3611842cc04507a94868c"
   license "MIT"
 
   # Free-threaded CPython is mandatory, not a preference.
@@ -37,33 +37,33 @@ class Pidrei < Formula
   end
 
   resource "pidrei-ai" do
-    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.0/pidrei_ai-0.84.2.0.tar.gz"
-    sha256 "4a8f28823cb8989c7ba844d1fbac8d47b910b8ed931bdaf36d20e97c0a72fe10"
+    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.1/pidrei_ai-0.84.2.1.tar.gz"
+    sha256 "24f56bf99901b0e7374f0c7e3beac445edb4045b1998c457e5d6d72d412636be"
   end
 
   resource "pidrei-agent" do
-    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.0/pidrei_agent-0.84.2.0.tar.gz"
-    sha256 "1cad4000fab11f79698ef822b89de75360bb77ffbf0d8cdcce1f6431b520abe2"
+    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.1/pidrei_agent-0.84.2.1.tar.gz"
+    sha256 "06369d1e676f10153f95e16e67cdbb830a6dcec5a7a58080161296deb1b975ac"
   end
 
   resource "pidrei-protocol" do
-    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.0/pidrei_protocol-0.84.2.0.tar.gz"
-    sha256 "23e5282cb89efdda562af331bf51a4af5c0799230d7c0e0ea57cc0849d4ab700"
+    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.1/pidrei_protocol-0.84.2.1.tar.gz"
+    sha256 "5f269817db7051dd4176a98b856a670c61cda094a193aab4c621866bf8f96b27"
   end
 
   resource "pidrei-client" do
-    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.0/pidrei_client-0.84.2.0.tar.gz"
-    sha256 "41c9e06f28b6db8009492177bbd49fd6efbccde57046364f4cdf48b7d95a3c74"
+    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.1/pidrei_client-0.84.2.1.tar.gz"
+    sha256 "1cc7eda89110e3971eee8983a0b461c7051fd6f351880c031625eccdece19ded"
   end
 
   resource "pidrei-tui" do
-    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.0/pidrei_tui-0.84.2.0.tar.gz"
-    sha256 "8ef6009da43763c1f7adacda3f00ca4dc70cd73bfe9a1454c2508c45d14372ae"
+    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.1/pidrei_tui-0.84.2.1.tar.gz"
+    sha256 "c10d331feac128e124d1425af89481719431884e6b2c00dd0c7372cc57e45211"
   end
 
   resource "pidrei-server" do
-    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.0/pidrei_server-0.84.2.0.tar.gz"
-    sha256 "34963a202907682ea78ac9c954079a18bbe131d60db8b96bc64ef3692f695463"
+    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.1/pidrei_server-0.84.2.1.tar.gz"
+    sha256 "09bb8ff6f22309df67e9abd401e2a3bec3bf586c0111cc240ca8979b884334d7"
   end
 
   resource "attrs" do
@@ -92,8 +92,8 @@ class Pidrei < Formula
   end
 
   resource "httpunk" do
-    url "https://files.pythonhosted.org/packages/41/31/53b70442948a409367d23351ceb40b44a6deac680b3151daf2409272a313/httpunk-0.1.3.tar.gz"
-    sha256 "c1b90e61fe64b9cef350bf8fd9a38872f83ae35977d7ea1105ea923b565e6b14"
+    url "https://files.pythonhosted.org/packages/07/aa/6303dd7545e6e03dde6a9725141ba3b8ab1152a5f2f5b70700478045af41/httpunk-0.1.4.tar.gz"
+    sha256 "84c58a6860d396a0c843f890a43f54411c812e84d048b8c9bc8626a1c549cd3f"
   end
 
   resource "jieba" do
@@ -147,8 +147,8 @@ class Pidrei < Formula
   end
 
   resource "punkreq" do
-    url "https://files.pythonhosted.org/packages/e4/e8/6d28ed9ff934101d84ec9651a9ede21ba6fe81a4a02d63e4c6f4e8a1f2f5/punkreq-0.1.2.tar.gz"
-    sha256 "ca6191d4590cab36366efce0fcc2af39e93d7534ea34d2e03b136c0d74ea0282"
+    url "https://files.pythonhosted.org/packages/fc/c4/590781ae4decc4b752df8593297c7ee4d0155aca9f488098a30bb75f2fed/punkreq-0.1.4.tar.gz"
+    sha256 "d650b76cfe3e5dd187fc9788b1e6846ad8a754287508a39850c87a822d4e71e6"
   end
 
   resource "pycparser" do
@@ -187,8 +187,8 @@ class Pidrei < Formula
   end
 
   resource "tonio" do
-    url "https://files.pythonhosted.org/packages/44/dd/0681ef3fd30965a2f4fc211a6bbb306d429b76bd5ee394aa80e82491ef23/tonio-0.9.6.tar.gz"
-    sha256 "6ba5f2f3c42da9bc4efd7091e20537fa4e259e0b7f36ab454f35b6db2a7f2053"
+    url "https://files.pythonhosted.org/packages/70/73/7ee445c344b7b9604b9f349b2d351e3abd04209810115cc83706a506a30d/tonio-0.9.7.tar.gz"
+    sha256 "9f9afec5727091e792142ec38157286708e0bf694c3d4fbe00851adea5ee0cd8"
   end
 
   resource "uc-micro-py" do
@@ -216,8 +216,8 @@ class Pidrei < Formula
   end
 
   test do
-    assert_equal "0.84.2.0", shell_output("#{bin}/pidrei --version").strip
+    assert_equal "0.84.2.1", shell_output("#{bin}/pidrei --version").strip
     # `--version` prints the bare version, no program name — on both binaries.
-    assert_equal "0.84.2.0", shell_output("#{bin}/pi3 --version").strip
+    assert_equal "0.84.2.1", shell_output("#{bin}/pi3 --version").strip
   end
 end
