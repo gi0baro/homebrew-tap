@@ -6,8 +6,8 @@ class Pidrei < Formula
 
   desc "Terminal coding agent — a Python port of the pi coding agent"
   homepage "https://github.com/gi0baro/pidrei"
-  url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.1/pidrei-0.84.2.1.tar.gz"
-  sha256 "e281cd84fbce2788aae2af2fe452365a510fa1a8c9a3611842cc04507a94868c"
+  url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.2/pidrei-0.84.2.2.tar.gz"
+  sha256 "eb45dfc4e939a6f922efac83f0a99264529bb8df5eaaceec62d1dbf556f49085"
   license "MIT"
 
   # Free-threaded CPython is mandatory, not a preference.
@@ -37,33 +37,33 @@ class Pidrei < Formula
   end
 
   resource "pidrei-ai" do
-    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.1/pidrei_ai-0.84.2.1.tar.gz"
-    sha256 "24f56bf99901b0e7374f0c7e3beac445edb4045b1998c457e5d6d72d412636be"
+    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.2/pidrei_ai-0.84.2.2.tar.gz"
+    sha256 "eb393242a81ea4c9db88ccdd3cc2f9dc3d9525c61991dad87f4b1c70b2309a6b"
   end
 
   resource "pidrei-agent" do
-    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.1/pidrei_agent-0.84.2.1.tar.gz"
-    sha256 "06369d1e676f10153f95e16e67cdbb830a6dcec5a7a58080161296deb1b975ac"
+    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.2/pidrei_agent-0.84.2.2.tar.gz"
+    sha256 "3f0ad5b3d3732dd21dc6fb8b5fd55091de0d6f0975742aa8bbe13dff04eb4670"
   end
 
   resource "pidrei-protocol" do
-    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.1/pidrei_protocol-0.84.2.1.tar.gz"
-    sha256 "5f269817db7051dd4176a98b856a670c61cda094a193aab4c621866bf8f96b27"
+    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.2/pidrei_protocol-0.84.2.2.tar.gz"
+    sha256 "ef644967b8bfef6991fb9f32dbd920983fa5a7786184b2f7390b6a5f53da9c85"
   end
 
   resource "pidrei-client" do
-    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.1/pidrei_client-0.84.2.1.tar.gz"
-    sha256 "1cc7eda89110e3971eee8983a0b461c7051fd6f351880c031625eccdece19ded"
+    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.2/pidrei_client-0.84.2.2.tar.gz"
+    sha256 "c919f26c9fab500b2f085ed7676f385cae2e83c33c2330c3bc18ce4518111a85"
   end
 
   resource "pidrei-tui" do
-    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.1/pidrei_tui-0.84.2.1.tar.gz"
-    sha256 "c10d331feac128e124d1425af89481719431884e6b2c00dd0c7372cc57e45211"
+    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.2/pidrei_tui-0.84.2.2.tar.gz"
+    sha256 "2bcd8c1fa5ba9441c02212e219ef98c21c8d1e2dcdfb9d526efe559f0dae9872"
   end
 
   resource "pidrei-server" do
-    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.1/pidrei_server-0.84.2.1.tar.gz"
-    sha256 "09bb8ff6f22309df67e9abd401e2a3bec3bf586c0111cc240ca8979b884334d7"
+    url "https://github.com/gi0baro/pidrei/releases/download/v0.84.2.2/pidrei_server-0.84.2.2.tar.gz"
+    sha256 "f4af4747bffcff8c5e343a38b0d31020f0efe37f9fb75107f4fc93f6cd1ba8c5"
   end
 
   resource "attrs" do
@@ -216,8 +216,8 @@ class Pidrei < Formula
   end
 
   test do
-    assert_equal "0.84.2.1", shell_output("#{bin}/pidrei --version").strip
+    assert_equal "0.84.2.2", shell_output("#{bin}/pidrei --version").strip
     # `--version` prints the bare version, no program name — on both binaries.
-    assert_equal "0.84.2.1", shell_output("#{bin}/pi3 --version").strip
+    assert_equal "0.84.2.2", shell_output("#{bin}/pi3 --version").strip
   end
 end
