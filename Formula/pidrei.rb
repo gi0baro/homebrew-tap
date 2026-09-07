@@ -6,8 +6,8 @@ class Pidrei < Formula
 
   desc "Terminal coding agent — a Python port of the pi coding agent"
   homepage "https://github.com/gi0baro/pidrei"
-  url "https://github.com/gi0baro/pidrei/releases/download/v0.85.0.0/pidrei-0.85.0.0.tar.gz"
-  sha256 "82276a38479c615d5cbb34b3494f0e121de4d348358f1a58efa89db83878a9d0"
+  url "https://github.com/gi0baro/pidrei/releases/download/v0.85.1.0/pidrei-0.85.1.0.tar.gz"
+  sha256 "78d43654f4edf64084870c11e3d3afff974fceed1a708657e1c9dedccaea0213"
   license "MIT"
 
   # Free-threaded CPython is mandatory, not a preference.
@@ -37,18 +37,18 @@ class Pidrei < Formula
   end
 
   resource "pidrei-ai" do
-    url "https://github.com/gi0baro/pidrei/releases/download/v0.85.0.0/pidrei_ai-0.85.0.0.tar.gz"
-    sha256 "d176186f423712b288da15a3872af626f63df5606625becd6a134db50569d871"
+    url "https://github.com/gi0baro/pidrei/releases/download/v0.85.1.0/pidrei_ai-0.85.1.0.tar.gz"
+    sha256 "896145de018f637a75b3849956e74e9cd81681bc7f64945bf50ddc5332228380"
   end
 
   resource "pidrei-agent" do
-    url "https://github.com/gi0baro/pidrei/releases/download/v0.85.0.0/pidrei_agent-0.85.0.0.tar.gz"
-    sha256 "46fb6cba80ee2f2b922e7144b71aa62ce2d44b30c8d30f6741b7ce4d17e82907"
+    url "https://github.com/gi0baro/pidrei/releases/download/v0.85.1.0/pidrei_agent-0.85.1.0.tar.gz"
+    sha256 "a01faf75d9d43d2e0659363f28c29a6be62de39d2dac970dfb5b9d01b857b062"
   end
 
   resource "pidrei-tui" do
-    url "https://github.com/gi0baro/pidrei/releases/download/v0.85.0.0/pidrei_tui-0.85.0.0.tar.gz"
-    sha256 "ff3c5a8edbe75eee503b8fd0404bed548e764f6c6ddb71f15dc84d856e0ea2ec"
+    url "https://github.com/gi0baro/pidrei/releases/download/v0.85.1.0/pidrei_tui-0.85.1.0.tar.gz"
+    sha256 "6925c5d97ef48259b39df8cb0c3dacbee881e00c56992afaf8be82791607906f"
   end
 
   resource "attrs" do
@@ -201,8 +201,8 @@ class Pidrei < Formula
   end
 
   test do
-    assert_equal "0.85.0.0", shell_output("#{bin}/pidrei --version").strip
+    assert_equal "0.85.1.0", shell_output("#{bin}/pidrei --version").strip
     # `--version` prints the bare version, no program name — on both binaries.
-    assert_equal "0.85.0.0", shell_output("#{bin}/pi3 --version").strip
+    assert_equal "0.85.1.0", shell_output("#{bin}/pi3 --version").strip
   end
 end
